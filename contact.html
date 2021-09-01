@@ -89,22 +89,22 @@
                         <a href="#"><img src="images/logo.png" alt="logo"></a>
                       </div>
                       <ul class="nav main-menu menu navbar-nav" id="menu-bg">
-                        <li class="active"><a href="index.php">Home</a></li>
+                        <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="#">All Product</a></li>
-                        <li><a href="service.php">Service</a></li>
+                        <li><a href="service.html">Service</a></li>
                         <li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
                           <ul class="dropdown">
-                            <li><a href="cart.php">Cart</a></li>
-                            <li><a href="checkout.php">Checkout</a></li>
+                            <li><a href="cart.html">Cart</a></li>
+                            <li><a href="checkout.html">Checkout</a></li>
                           </ul>
                         </li>
                         <li><a href="#">Blog<i class="ti-angle-down"></i></a>
                           <ul class="dropdown">
-                            <li><a href="blog-single-sidebar.php">Blog Single Sidebar</a></li>
+                            <li><a href="blog-single-sidebar.html">Blog Single Sidebar</a></li>
                           </ul>
                         </li>
-                        <li><a href="about-us.php">About Us</a></li>
-                        <li><a href="contact.php">Contact Us</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                       </ul>
                     </div>
                   </div>
@@ -121,9 +121,115 @@
   <!--/ End Header -->
 
 
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="bread-inner">
+						<ul class="bread-list">
+							<li><a href="index1.php">Home<i class="ti-arrow-right"></i></a></li>
+							<li class="active"><a href="blog-single.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Breadcrumbs -->
 
+	<!-- Start Contact -->
+	<section id="contact-us" class="contact-us section">
+		<div class="container">
+				<div class="contact-head">
+					<div class="row">
+						<div class="col-lg-8 col-12">
+							<div class="form-main">
+								<div class="title">
+									<h4>Get in touch</h4>
+									<h3>Write us a message</h3>
+								</div>
+								<form class="form" method="post" action="mail/mail.php">
+									<div class="row">
+										<div class="col-lg-6 col-12">
+											<div class="form-group">
+												<label>Your Name<span>*</span></label>
+												<input name="name" type="text" placeholder="">
+											</div>
+										</div>
+										<div class="col-lg-6 col-12">
+											<div class="form-group">
+												<label>Your Subjects<span>*</span></label>
+												<input name="subject" type="text" placeholder="">
+											</div>
+										</div>
+										<div class="col-lg-6 col-12">
+											<div class="form-group">
+												<label>Your Email<span>*</span></label>
+												<input name="email" type="email" placeholder="">
+											</div>
+										</div>
+										<div class="col-lg-6 col-12">
+											<div class="form-group">
+												<label>Your Phone<span>*</span></label>
+												<input name="company_name" type="text" placeholder="">
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="form-group message">
+												<label>your message<span>*</span></label>
+												<textarea name="message" placeholder=""></textarea>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="form-group button">
+												<button type="submit" class="btn ">Send Message</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="col-lg-4 col-12">
+							<div class="single-head">
+								<div class="single-info">
+									<i class="fa fa-phone"></i>
+									<h4 class="title">Call us Now:</h4>
+									<ul>
+										<li>+012 345 678 910</li>
+										<li>+012 345 678 910</li>
+									</ul>
+								</div>
+								<div class="single-info">
+									<i class="fa fa-envelope-open"></i>
+									<h4 class="title">Email:</h4>
+									<ul>
+										<li><a href="mailto:info@eshop.com">info@eshop.com</a></li>
+										<li><a href="mailto:info@eshop.com">support@eshop.com</a></li>
+									</ul>
+								</div>
+								<div class="single-info">
+									<i class="fa fa-location-arrow"></i>
+									<h4 class="title">Our Address:</h4>
+									<ul>
+										<li>Daffodil Smart City, Ashulia , Savar, Bangladesh.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+	<!--/ End Contact -->
 
-        <!-- Start Shop Newsletter  -->
+	<!-- Map Section -->
+	<div class="map-section">
+		<div id="myMap"></div>
+	</div>
+	<!--/ End Map Section -->
+
+	<!-- Start Shop Newsletter  -->
 	<section class="shop-newsletter section">
 		<div class="container">
 			<div class="inner-top">
@@ -241,7 +347,7 @@
 
 
 
-	<!-- /////////////////////////////////////////////////////////////// -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
   <script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.0.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
@@ -259,9 +365,5 @@
 	<script src="js/onepage-nav.min.js"></script>
 	<script src="js/easing.js"></script>
 	<script src="js/active.js"></script>
-	<!-- Google Map JS -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnhgNBg6jrSuqhTeKKEFDWI0_5fZLx0vM"></script>
-	<script src="js/gmap.min.js"></script>
-	<script src="js/map-script.js"></script>
 </body>
 </html>
